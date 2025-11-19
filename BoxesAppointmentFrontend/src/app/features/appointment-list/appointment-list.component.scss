@@ -1,0 +1,37 @@
+.list-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+
+  @media (min-width: 768px) {
+    padding: 32px;
+  }
+}
+
+.list-card {
+  width: 100%;
+  max-width: 1000px; // Ancho máximo para la tabla
+
+  .full-width-table {
+    width: 100%;
+  }
+}
+
+.create-button-container {
+    margin-top: 16px; 
+    display: flex;
+    justify-content: center; // Centra el botón horizontalmente
+  }
+
+// Ajustes para móviles
+@media (max-width: 767px) {
+  .list-container {
+    padding: 8px;
+  }
+  .list-card {
+    margin: 0 8px;
+  }
+}

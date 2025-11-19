@@ -1,0 +1,61 @@
+.appointment-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px;
+  min-height: 100vh;
+  background-color: #f5f5f5; 
+
+  @media (min-width: 768px) { // Para tablet y desktop
+    padding: 32px;
+  }
+}
+
+.appointment-card {
+  width: 100%;
+  max-width: 600px; // Ancho máximo para desktop
+
+  .appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; // Espacio entre elementos
+
+    h3 {
+      margin: 24px 0 8px 0; // Espacio superior e inferior para los subtítulos
+      font-size: 1.1rem;
+      color: #555;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 4px;
+    }
+
+    .full-width {
+      width: 100%;
+    }
+
+    .form-actions {
+      margin-top: 16px;
+      display: flex;
+      justify-content: center;
+
+      .spinner {
+        animation: spin 1s linear infinite;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+// Ajustes para móviles
+@media (max-width: 767px) {
+  .appointment-container {
+    padding: 8px;
+  }
+  .appointment-card {
+    margin: 0 8px; // Margen lateral en móviles
+  }
+}

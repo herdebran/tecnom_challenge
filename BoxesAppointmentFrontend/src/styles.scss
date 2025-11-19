@@ -1,0 +1,21 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+:root {
+  --primary: #1565c0;
+  --secondary: #455a64;
+  --accent: #00838f;
+}
+
+
+
+mat-toolbar a[mat-button] {
+  color: white !important;
+  font-weight: 500;
+  padding: 0 12px;
+  text-transform: none;
+}
+
+mat-toolbar a[mat-button].active {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 4px;
+}
