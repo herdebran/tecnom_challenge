@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\BoxesAppointmentApp.Api.props" />
+</Project>
